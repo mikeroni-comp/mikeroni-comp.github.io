@@ -168,6 +168,28 @@
             </div>
           </div>
         </div>
+        <div class="row mt-5">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <img src="images/casino_uml.png" alt="Casino Simulator UML Diagram" class="img-fluid">
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <h3>USD Casino Simulator</h3>
+              <p>
+                My group and I all share an interest in the casino, so when it came time for our class final project we decided to build a casino simulator in Java. The project gave us a chance to combine something we found fun with the object oriented and SOLID principles we had been learning all semester.
+              </p>
+              <p>
+                The USD Casino Simulator is a command line application that lets you walk into a virtual casino with $1000 and play five games: Slots, Craps, Blackjack, Baccarat, and Roulette. You enter your name, pick a game from the menu, place your bet, and play. Your balance carries across every game and the casino closes when you run out of money or decide to leave.
+              </p>
+              <p>
+                The project is built entirely in Java and designed around a shared Game interface that every game implements. This means each game is required to handle bets, run its own game loop, and update the player balance, but each one does it in its own way. A GameFactory class handles creating the right game object based on the player's menu choice, keeping the Casino class clean and easy to extend. The UML diagram above shows the full structure of the project.
+              </p>
+              <p>
+                I was personally responsible for implementing the entire Slots and Baccarat classes from scratch, as well as the SlotSymbols enum. For Slots, I built the spin logic, the full payout system, and the game loop that handles betting, balance updates, and replaying. I also used helper methods like isAllMatch() and getMultiplier() to keep the code clean and readable. For Baccarat, I implemented the complete rule set including initial card dealing, natural detection, player and banker third card drawing rules, and winner determination. I refactored the class using helper methods like dealHand(), shouldBankerDraw(), and printThirdCardResult() to break up the larger methods into focused, readable pieces. You can view the full source code at 'https://github.com/usd-comp-305/project-04-mike-brett-joey-khy'
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
